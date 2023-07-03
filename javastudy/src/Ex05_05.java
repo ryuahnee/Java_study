@@ -14,7 +14,7 @@ public class Ex05_05 {
 				tmp = j;
 			for(int k = 0; k<ball3.length; k++) {
 					ball3[k] = tmp;
-					//dd
+					//
 				}
 			}
 		}

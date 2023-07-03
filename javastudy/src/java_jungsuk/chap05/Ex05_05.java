@@ -12,14 +12,15 @@ public class Ex05_05 {
 		for(int i=0; i< ballArr.length;i++) {
 			int j = (int)(Math.random() * ballArr.length);
 			int tmp = 0;
-			if(j != tmp) {
-				tmp = j;
-			for(int k = 0; k<ball3.length; k++) {
-					ball3[k] = tmp;
-					//d
-				}
-			}
+			
+			tmp = ballArr[i];
+			ballArr[i] = ballArr[j];
+			ballArr[j] = tmp;
+			
 		}
+		
+		System.arraycopy(ballArr,0, ball3,0,3);
+		
 		for(int i=0;i<ball3.length;i++) {
 			System.out.print(ball3[i]);
 		}
